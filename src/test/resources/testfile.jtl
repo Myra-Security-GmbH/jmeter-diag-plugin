@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+    <httpSample t="750" it="0" lt="750" ct="119" ts="1463142892615" s="false" lb="CacheClear 1" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="559" sc="1" ec="1" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>true</failure>
+            <error>false</error>
+            <failureMessage>Test failed: code expected to match /200/</failureMessage>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>true</error>
+            <failureMessage>org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``import net.sf.json.JSONObject;  String jsonString = prev.getResponseDataAsString . . . &apos;&apos; : Typed variable declaration : Method Invocation JSONObject.fromObject</failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-9Ji6rNn4srbaeAZXdlOETymQtSqu1ZK2PNNe8AaPdaY&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:tX0eTctlmnBSLTQPasfWJoIH59XvqYT7MH9sJRwHyVU93xiZtny88gVSLIw1B66YUo5VKf31CDUzOxuGl1zIAQ==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:52+02:00
+            Content-Length: 76
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String">{ &quot;fqdn&quot; : &quot;cdn.afterspring.org&quot;, &quot;resource&quot; : &quot;*.jpg&quot;, &quot;recursive&quot; : true }</queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="48" it="0" lt="48" ct="0" ts="1463142893414" s="true" lb="CacheClear 2" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="559" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-a0R88j8OSdnrKMwfBrdcQHWjfHhvbb5Aq67bNtnr2e8&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA :FuLeXB/eSYDeddhxLSYGNftcCbZI48ZPlCoEK0NZYaB077mjX+LiWxfst2a0664fws7k9cfGlrQHj0PW8Z0V0A==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:52+02:00
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="38" it="0" lt="38" ct="0" ts="1463142893473" s="true" lb="CacheClear 3" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="557" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-STJRdiCRzrmUwzMa4bDj3QOP39yB7sKnwc0QWbpmo&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:Pdzw6HQkJSfMyDeoym3cJC5F/ILGdn7kzcTabhxaDUld7ZV0r0wnxkME2MePCXkaVsE5xzyIS9cJiupwYA7eAg==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="54" it="0" lt="54" ct="0" ts="1463142893522" s="true" lb="CacheClear 4" rc="405" rm="Method Not Allowed" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="1076" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 405 Method Not Allowed
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            Allow: PUT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-JCYvU2w97ETAAYOQYAOEDVcxg81XdJVHwzf8syCNj68&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:UZGxSWRHx7b5P5Vn8X/VymbSovn+JFK/ufKCPE/xHE8zF9xhpy4JEhhuUicXtPGBWYs9dY/CjTEq37nSCU0r1g==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot; /&gt;
+            &lt;title&gt;An Error Occurred: Method Not Allowed&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Oops! An Error Occurred&lt;/h1&gt;
+            &lt;h2&gt;The server returned a &quot;405 Method Not Allowed&quot;.&lt;/h2&gt;
+
+            &lt;div&gt;
+            Something is broken. Please let us know what you were doing when this error occurred.
+            We will fix it as soon as possible. Sorry for any inconvenience caused.
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">POST</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="26" it="0" lt="26" ct="0" ts="1463142893588" s="false" lb="CacheClear 5" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="558" sc="1" ec="1" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>true</failure>
+            <error>false</error>
+            <failureMessage>Test failed: code expected to match /200/</failureMessage>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>true</error>
+            <failureMessage>org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``import net.sf.json.JSONObject;  String jsonString = prev.getResponseDataAsString . . . &apos;&apos; : Typed variable declaration : Method Invocation JSONObject.fromObject</failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-gymL5FLF6gLzUK7Iq85jjYGI6EDWHqZXzogrXtX5OI&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:/9A8cMO/WmOfMEa3mY2WBRdCPHqAEH0KbTtB2rhyPweQq1ySdT5MdfaPpIuCLGg7eaDL0Yu4dD4tB5ukltfeWw==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 76
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String">{ &quot;fqdn&quot; : &quot;cdn.afterspring.org&quot;, &quot;resource&quot; : &quot;*.jpg&quot;, &quot;recursive&quot; : true }</queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/ALL:afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="25" it="0" lt="25" ct="0" ts="1463142893625" s="false" lb="CacheClear 6" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="559" sc="1" ec="1" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>true</failure>
+            <error>false</error>
+            <failureMessage>Test failed: code expected to match /200/</failureMessage>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>true</error>
+            <failureMessage>org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``import net.sf.json.JSONObject;  String jsonString = prev.getResponseDataAsString . . . &apos;&apos; : Typed variable declaration : Method Invocation JSONObject.fromObject</failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-x0KatKm0LYHiv56W348AtqwdBuw5YRUf8X3A4X6Y8JU&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:uU8VZvwd+qYKJWfHyskJcNTxZMt+aLDwegxzB1WHmh134laaeHmZkQ4sIwOE7EITZjA/jUcFWQTugBu4aZgsVw==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 70
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String">{ &quot;fqdn&quot; : &quot;myracloud.com&quot;, &quot;resource&quot; : &quot;*.jpg&quot;, &quot;recursive&quot; : true }</queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="24" it="0" lt="24" ct="0" ts="1463142893661" s="true" lb="CacheClear 7" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="556" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-2EgQ8d2BT1ULdZfsQg87xGpgDo4VbXFTfwJbFwfQ&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:8cWNI5X8949KXJo0aOLHrQRcm9U0s2xlGxCFdbDUmQT4yCv3hdAm840MSxwAbS3mmMXhKxIDCTs8jwK0QIsCQw==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="24" it="0" lt="24" ct="0" ts="1463142893694" s="true" lb="CacheClear 8" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="559" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-Frqr4PgxpXJsjGHOdkz5AJbA8Vm6ndEvPjbLhZ6cC2I&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA :mztH8RrP15NvJk1WkMV25TJFMnJwne4NrIE3gQ0kolLGWyuIP8dnxk4IBNsDo2GphCHGnM9nRl2x3SkZqvrxSw==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="26" it="0" lt="26" ct="0" ts="1463142893726" s="true" lb="CacheClear 9" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="555" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-ET0SrxSLeJm3uBz36XxZe1WxHwsiYkOf69Xuj8w&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:TlSubfr0hOkU6i81lLCFXlqp5faVKmXkBxQlnrHJktFcw4xWO2WpTGMFrx4TtrC2v8MwehLAyKScVi8/My93qQ==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="43" it="0" lt="43" ct="0" ts="1463142893760" s="true" lb="CacheClear 10" rc="405" rm="Method Not Allowed" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="1074" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 405 Method Not Allowed
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            Allow: PUT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-1bipuNxvDwnqjMAtYdAobzL9NcBpDSk0RTnUMFfHE&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:TlSubfr0hOkU6i81lLCFXlqp5faVKmXkBxQlnrHJktFcw4xWO2WpTGMFrx4TtrC2v8MwehLAyKScVi8/My93qQ==
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot; /&gt;
+            &lt;title&gt;An Error Occurred: Method Not Allowed&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Oops! An Error Occurred&lt;/h1&gt;
+            &lt;h2&gt;The server returned a &quot;405 Method Not Allowed&quot;.&lt;/h2&gt;
+
+            &lt;div&gt;
+            Something is broken. Please let us know what you were doing when this error occurred.
+            We will fix it as soon as possible. Sorry for any inconvenience caused.
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">POST</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/cacheClear/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="48" it="0" lt="48" ct="0" ts="1463142893825" s="true" lb="IpFilter 2" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="558" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-IaZvnRWUs3OelEJ1Dz2KW0uL0QbRTaDMgGZZ9H975Q&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA :GezITWRNAZcuESTWvDTZ/mwfwIywTnf95OwMp2HL97/M4g832Dmit6YzWYAfmIQvEagW1kW0bPi4m1wBpIS/tQ==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/ipfilter/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="48" it="0" lt="48" ct="0" ts="1463142893883" s="true" lb="IpFilter 3" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="558" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-7nDySvO8gxuCdZH7Ynl3HOkkEdZFCIiqmnpUJs3pBM&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:u38cGrlSlfDf5n5Wymd+cFOS2YJWLc6q7jNwVj/rlMlV2WPNZ0MLBRCuib8ItaIOohi0so/v10bjVsUViv9CbA==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/ipfilter/afterspring.org</java.net.URL>
+    </httpSample>
+    <httpSample t="40" it="0" lt="40" ct="0" ts="1463142893947" s="true" lb="IpFilter 5" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="557" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:53 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-QirJyT6c7MSIFt7gAxgmIhVfW9PY0I1LNeudt6pa4&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:7vmsG7fgn83K0tYVizG6v+mHWpvmBK132Iap3QtY4rm+2rBrIPxDITSGmahxdsbvNzEgZxx30DbINPZoEB2gyQ==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/ipfilter/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="61" it="0" lt="61" ct="0" ts="1463142894000" s="true" lb="IpFilter 6" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="557" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:54 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-EycNvXdUC5HAWsH5xpc3b2bq04TGlxRJVTsuk5YGs&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA :j1FbZkN/MNL+0oOpdqAusaV/G5lhBOnbpTH30J5m/6CR5fkZEGKWy/rH8oF77AdjZJsNRyCj9uYxCuLpNmkk+Q==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:53+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/ipfilter/myracloud.com</java.net.URL>
+    </httpSample>
+    <httpSample t="30" it="0" lt="30" ct="0" ts="1463142894077" s="true" lb="IpFilter 7" rc="403" rm="Forbidden" tn="Thread-Gruppe 1-1" dt="text" de="UTF-8" by="558" sc="1" ec="0" ng="1" na="1" hn="85a083b46043">
+        <assertionResult>
+            <name>Response Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+        </assertionResult>
+        <assertionResult>
+            <name>BeanShell Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+        <responseHeader class="java.lang.String">HTTP/1.1 403 Forbidden
+            Server: nginx/1.6.2
+            Content-Type: text/html; charset=UTF-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Cache-Control: no-cache
+            Date: Fri, 13 May 2016 12:34:54 GMT
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: DENY
+            Content-Security-Policy: default-src &apos;self&apos;; script-src &apos;self&apos; &apos;nonce-kRyp2lxY42yvuR2H4nKWX1KBlBgMZkicV3hB2KeVO0&apos;; object-src &apos;none&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; myracloud.com *.googleapis.com data:; frame-src &apos;none&apos;; report-uri /csp/report
+            X-XSS-Protection: 1; mode=block
+        </responseHeader>
+        <requestHeader class="java.lang.String">Connection: keep-alive
+            Authorization: MYRA 32bba84827cf56ebb661b5a5214d969a:ROF3xmsxt1TdkoilyQzFb8/W8ELRC3VRXrla90QiJ5wz3FVt3kfHjDRgp6F60BbVMjoTiKtw1Jk8fd2KA6t1Kg==
+            Content-Type: application/json
+            Date: 2016-05-13T14:34:54+02:00
+            Content-Length: 0
+            Host: myracloud-web.local
+            User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+        </requestHeader>
+        <responseData class="java.lang.String"></responseData>
+        <responseFile class="java.lang.String"></responseFile>
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">PUT</method>
+        <queryString class="java.lang.String"></queryString>
+        <java.net.URL>https://myracloud-web.local/en/rapi/ipfilter/myracloud.com</java.net.URL>
+    </httpSample>
+
+</testResults>

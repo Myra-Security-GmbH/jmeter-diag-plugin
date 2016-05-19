@@ -1,0 +1,58 @@
+<?jelly escape-by-default='true'?>
+<?jelly escape-by-default='true'?>
+
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+         xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <l:layout title="Summary of JMeter">
+        <l:side-panel>
+            <l:tasks>
+                <l:task icon="images/24x24/up.gif" href="../" title="${%Back to Project}"/>
+            </l:tasks>
+        </l:side-panel>
+
+        <l:main-panel>
+            <h1>Summary of JMeter</h1>
+
+            <table class="pane sortable bigtable">
+                <colspan>
+                    <col width="30"/>
+                    <col/>
+                    <col width="150"/>
+                    <col width="150"/>
+                    <col width="150"/>
+                    <col width="100"/>
+                    <col width="80"/>
+                    <col />
+                </colspan>
+                <thead>
+                    <tr>
+                        <th class="pane-header">#</th>
+                        <th class="pane-header">Samplename</th>
+                        <th class="pane-header">Method</th>
+                        <th class="pane-header">ResponseCode</th>
+                        <th class="pane-header">Date</th>
+                        <th class="pane-header">Duration</th>
+                        <th class="pane-header">Errors</th>
+                        <th class="pane-header">URL</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <j:forEach items="${it.testResult.httpSamples}" var="sample">
+                        <tr>
+                            <t:ballColorTd iconSizeClass="icon-sm" it="${it.convertSuccessFlag(sample.successful)}"/>
+                            <td><a href="${it.buildLink(sample)}">${sample.name}</a></td>
+                            <td>${sample.method}</td>
+                            <td>${sample.responseCode}</td>
+                            <td>${sample.date.toLocaleString()}</td>
+                            <td>${sample.duration} ms</td>
+                            <td>${sample.errorCount}</td>
+                            <td>${sample.url}</td>
+                        </tr>
+                    </j:forEach>
+                </tbody>
+            </table>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

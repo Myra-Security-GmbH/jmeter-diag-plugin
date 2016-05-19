@@ -1,0 +1,52 @@
+<?jelly escape-by-default='true'?>
+
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+         xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:e="/hudson/plugins/jmeter/diag/tags">
+
+    <l:layout title="Detail view">
+        <j:set var="sample" value="${it.getDetailSample(request.getParameter('sampleId'))}"/>
+
+        <l:side-panel>
+            <l:tasks>
+                <l:task icon="images/24x24/up.gif" href="../" title="${%Back to Project}"/>
+                <l:task icon="images/24x24/graph.gif" href="${rootURL}/${it.run.url}/jmeter-diagnostic" title="${%Back to Summary}"/>
+            </l:tasks>
+        </l:side-panel>
+
+        <l:main-panel>
+            <h1>Detail view (${sample.name})</h1>
+
+            <table class="pane bigtable">
+                <colspan>
+                    <col width="300"/>
+                    <col/>
+                </colspan>
+                <thead>
+                    <tr>
+                        <th class="pane-header">Name</th>
+                        <th class="pane-header">Value</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <e:detailRow title="Name" value="${sample.name}"/>
+                    <e:detailRow title="URL" value="${sample.url}"/>
+                    <e:detailRow title="Method" value="${sample.method}"/>
+                    <e:detailRow title="ResponseCode" value="${sample.responseCode}"/>
+                    <e:detailRow title="ErrorCount" value="${sample.errorCount}"/>
+                    <e:detailRow title="Date" value="${sample.date.toLocaleString()}"/>
+                    <e:detailRow title="Duration" value="${sample.duration} ms"/>
+                    <e:detailRow title="Cookies" value="${sample.cookies}"/>
+                    <e:detailRow title="RequestHeader" value="${it.parseHeader(sample.requestHeader)}"/>
+                    <e:detailRow title="ResponseHeader" value="${it.parseHeader(sample.responseHeader)}"/>
+                    <e:detailRow title="RequestData" value="${it.parseJson(sample.queryString)}"/>
+                    <e:detailRow title="ResponseData" value="${sample.responseData}"/>
+
+                    <j:forEach items="${sample.assertionResults}" var="assertion">
+                        <e:detailRow title="Assertion" value="${assertion}" />
+                    </j:forEach>
+                </tbody>
+            </table>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>
