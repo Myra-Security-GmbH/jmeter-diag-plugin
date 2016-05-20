@@ -46,7 +46,8 @@ public class JMeterDiagnosticPublisher extends Recorder implements SimpleBuildSt
             @Nonnull Launcher launcher,
             @Nonnull TaskListener taskListener
     ) throws InterruptedException, IOException {
-        String content = new String(Files.readAllBytes(Paths.get(filePath + "/" + this.jtlFile)));
+        FilePath fp = new FilePath(launcher.getChannel(), filePath + "/" + this.jtlFile);
+        String content = IOUtils.toString(fp.read());
         run.addAction(new JMeterDiagnosticBuildAction(content, run));
     }
 
