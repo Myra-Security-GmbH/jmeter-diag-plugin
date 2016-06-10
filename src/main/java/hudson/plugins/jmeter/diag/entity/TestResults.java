@@ -24,6 +24,13 @@ public class TestResults {
     }
 
     /**
+     * @return
+     */
+    public boolean isEmpty() {
+        return this.httpSamples.isEmpty();
+    }
+
+    /**
      * Constructor
      */
     public TestResults() {

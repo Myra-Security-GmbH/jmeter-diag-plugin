@@ -13,17 +13,14 @@ import org.apache.commons.io.IOUtils;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import javax.annotation.Nonnull;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /**
  * Created by blorenz on 13.05.16.
  */
 @SuppressWarnings("unused")
 public class JMeterDiagnosticPublisher extends Recorder implements SimpleBuildStep {
-
+    private boolean failOnEmpty;
     private String jtlFile;
 
     @Extension
@@ -35,8 +32,9 @@ public class JMeterDiagnosticPublisher extends Recorder implements SimpleBuildSt
     }
 
     @DataBoundConstructor
-    public JMeterDiagnosticPublisher(String jtlFile) {
+    public JMeterDiagnosticPublisher(String jtlFile, boolean failOnEmpty) {
         this.jtlFile = jtlFile;
+        this.failOnEmpty = failOnEmpty;
     }
 
     @Override
@@ -48,7 +46,7 @@ public class JMeterDiagnosticPublisher extends Recorder implements SimpleBuildSt
     ) throws InterruptedException, IOException {
         FilePath fp = new FilePath(launcher.getChannel(), filePath + "/" + this.jtlFile);
         String content = IOUtils.toString(fp.read());
-        run.addAction(new JMeterDiagnosticBuildAction(content, run));
+        run.addAction(new JMeterDiagnosticBuildAction(content, this.failOnEmpty, run));
     }
 
     @Override
