@@ -28,7 +28,6 @@ import java.io.Serializable;
 @SuppressWarnings("unused")
 public class JMeterDiagnosticBuildAction implements Action, ModelObject, Serializable {
     private String jtlFileContent;
-    private boolean failOnEmpty;
     private Run<?, ?> run;
     private TestResults results;
 
@@ -162,9 +161,8 @@ public class JMeterDiagnosticBuildAction implements Action, ModelObject, Seriali
      * @param failOnEmpty
      * @param run
      */
-    public JMeterDiagnosticBuildAction(String jtlFileContent, boolean failOnEmpty, Run<?, ?> run) throws AbortException {
+    public JMeterDiagnosticBuildAction(final String jtlFileContent, final boolean failOnEmpty, Run<?, ?> run) throws AbortException {
         this.jtlFileContent = jtlFileContent;
-        this.failOnEmpty = failOnEmpty;
         this.run = run;
 
         try {
@@ -180,7 +178,7 @@ public class JMeterDiagnosticBuildAction implements Action, ModelObject, Seriali
             throw new AbortException(e.getMessage());
         }
 
-        if (this.failOnEmpty && this.results.isEmpty()) {
+        if (failOnEmpty && this.results.isEmpty()) {
             throw new AbortException("There are no results in the given jtl file.");
         }
     }
