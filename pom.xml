@@ -13,7 +13,7 @@
 
     <artifactId>jmeter-diag</artifactId>
     <packaging>hpi</packaging>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
     <name>JMeter Diagnostic plugin</name>
 
     <developers>

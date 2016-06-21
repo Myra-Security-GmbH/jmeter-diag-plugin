@@ -40,7 +40,7 @@
                     <e:detailRow title="RequestHeader" value="${it.parseHeader(sample.requestHeader)}"/>
                     <e:detailRow title="ResponseHeader" value="${it.parseHeader(sample.responseHeader)}"/>
                     <e:detailRow title="RequestData" value="${it.parseJson(sample.queryString)}"/>
-                    <e:detailRow title="ResponseData" value="${sample.responseData}"/>
+                    <e:detailRow title="ResponseData" value="${it.parseJson(sample.responseData)}"/>
 
                     <j:forEach items="${sample.assertionResults}" var="assertion">
                         <e:detailRow title="Assertion" value="${assertion}" />
