@@ -63,7 +63,11 @@ public class JMeterXmlParser extends DefaultHandler {
 
         // responseCode
         if (attributes.getValue("rc") != null) {
-            sample.setResponseCode(Integer.parseInt(attributes.getValue("rc")));
+            try {
+                sample.setResponseCode(Integer.parseInt(attributes.getValue("rc")));
+            } catch (NumberFormatException ex) {
+                sample.setResponseCode(99999);
+            }
         } else if (attributes.getValue("rs") != null) {
             sample.setResponseCode(Integer.parseInt(attributes.getValue("rs")));
         }
@@ -72,7 +76,6 @@ public class JMeterXmlParser extends DefaultHandler {
         if (attributes.getValue("ec") != null) {
             sample.setErrorCount(Long.parseLong(attributes.getValue("ec")));
         }
-
 
         // it="0"
         // lt="750"
